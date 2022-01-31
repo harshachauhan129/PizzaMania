@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eat Pizza</title>
+    <!-- font awesome linking  -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <!-- Bootstrap Linking  CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Flickity CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+    <!-- css linking -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <header class="bg-light">
+        <nav class="px-5 py-3 d-flex align-content-center">
+            <i id="ham" class="fas fa-hamburger mt-1 fs-3"></i>
+            <div class="text-danger fs-4 mx-3 "><i class="fas fa-pizza-slice"></i></div>
+        </nav>
+        <div class="menu_section p-2">
+            <i class="fas fa-times fs-4" id="cross"></i>
+            <ul class="nav_list text-left mt-5 p-1">
+                <li class="nav_items mt-2">
+                    <i class="fas fa-book"></i> Menu
+                </li>
+                <li class="nav_items mt-4">
+                    <i class="fas fa-pizza-slice"></i> Party Orders
+                </li>
+                <li class="nav_items mt-4">
+                    <i class="far fa-clipboard"></i> Terms
+                </li>
+                <li class="nav_items mt-4">
+                    <i class="fas fa-lock"></i> Privacy
+                </li>
+            </ul>
+        </div>
+        <banner class="container">
+            <!-- carousel section  -->
+            <div class="carousel" data-flickity='{ "wrapAround": true }'>
+                <div class="carousel-cell mx-1">
+                    <img src="images/banner/1.jpg" alt="">
+                </div>
+                <div class="carousel-cell ">
+                    <img src="images/banner/2.jpg" alt="">
+                </div>
+                <div class="carousel-cell mx-1">
+                    <img src="images/banner/6.jpg " alt="">
+                </div>
+                <div class="carousel-cell mx-1">
+                    <img src="images/banner/4.jpg " alt="">
+                </div>
+                <div class="carousel-cell mx-1">
+                    <img src="images/banner/5.jpg" alt="">
+                </div>
+            </div>
+        </banner>
+    </header>
+    <hr class="p-1">
+    <div class="px-5 py-3 d-md-flex nav-2 justify-content-between align-content-center">
+        <div class="text-danger align-self-center fs-3 logo mx-3"><i class="fas fa-pizza-slice"></i></div>
+        <div class="search_bar">
+            <i class="fas fa-search icon_search"></i> <input id="search" class="py-3 px-4 rounded" type="text"
+                placeholder="     Search food">
+        </div>
+        <div class="veg_button">
+            <button id="veg_button" class="text-grey rounded border-none p-2 bg-grey px-4"><i
+                    class="fas fa-circle"></i>Veg</button>
+        </div>
+    </div>
+
+    </div>
+    <section class="bg-light main_section_ d-md-flex my-5">
+        <div class="menu_left d-md-block d-sm-none d-xsm-none py-5 px-2">
+            <div class="categories">
+                <h2>Categories</h2>
+                <ul>
+                    <a href="#buy">
+                        <li class="menu_items">Buy one - Get one free</li>
+                    </a>
+                    <a href="#beverages">
+                        <li class="menu_items">Sides and Beverages</li>
+                    </a>
+                    <a href="#desert">
+                        <li class="menu_items">Desserts (upto 25% savings)</li>
+                    </a>
+                    <li class="menu_items">Personal half pizzas (Semizzas)</li>
+                    <li class="menu_items">Cheese Burst Pizzas</li>
+                    <li class="menu_items">Signature Pizzas</li>
+                    <li class="menu_items">Half-and-Half (2 Semizzas)</li>
+                    <a href="#pasta">
+                        <li class="menu_items">Pastas and Lasagne</li>
+                    </a>
+                    <li class="menu_items">Combos (Serves-4)</li>
+                </ul>
+            </div>
+        </div>
+        <div class="main_middle">
+            <!-- combo  -->
+            <div id="buy" class="category d-md-flex justify-content-between">
+                <h1 class="fw-bold">Buy 1 get 1 free</h1>
+                <h3 class="text-secondary fw-bold">4 Products</h3>
+            </div>
+
+            <div class="combo d-flex justify-content-evenly flex-wrap">
+                <div class="card mx-2 my-5 rounded" style="width: 18rem;">
+                    <img class="card-img-top" src="images/Categories/combo1.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Pizza: Choose any 2 non-veg Pizzas @&#8377; 575.</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
+                            inventore!</p>
+                        <div class="price d-flex justify-content-between">
+                            <div class="nonVeg">
+                                <img src="images/Categories/non-veg.svg" class="img-fluid" width=20 alt="">
+                                <span>@&#8377; <strong class="price">575</strong></span>
+                            </div>
+                            <button class="btn add-to-cart px-4">Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mx-2 my-5" style="width: 18rem;">
+                    <img class="card-img-top" src="images/Categories/combo2.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Choose any 2 non-veg Pizzas @&#8377; 535.</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
+                            inventore!</p>
+                        <div class="price d-flex justify-content-between">
+                            <div class="veg">
+                                <img src="images/Categories/veg.svg" class="img-fluid" width=20 alt="">
+                                <span class="price">@&#8377; <strong class="price">535</strong></span>
+                            </div>
+                            <button class="btn add-to-cart px-4">Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mx-2 my-5" style="width: 18rem;">
+                    <img class="card-img-top" src="images/Categories/combo2.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Choose any 2 non-veg Pizzas @&#8377; 525.</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
+                            inventore!</p>
+                        <div class="price d-flex justify-content-between">
+                            <div class="veg">
+                                <img src="images/Categories/veg.svg" class="img-fluid" width=20 alt="">
+                                <span class="price">@&#8377; <strong class="price">525</strong></span>
+                            </div>
+                            <button class="btn add-to-cart px-4">Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mx-2 my-5" style="width: 18rem;">
+                    <img class="card-img-top" src="images/Categories/combo2.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Choose any 2 non-veg Pizzas @&#8377; 500.</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
+                            inventore!</p>
+                        <div class="price d-flex justify-content-between">
+                            <div class="veg">
+                                <img src="images/Categories/veg.svg" class="img-fluid" width=20 alt="">
+                                <span class="price">@&#8377; <strong class="price">500</strong></span>
+                            </div>
+                            <button class="btn add-to-cart px-4">Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- sides and Beverages -->
+            <div id="beverages" class="category d-md-flex justify-content-between">
+                <h1 class="fw-bold">Sides & Beverages</h1>
+                <h3 class="text-secondary fw-bold">4 Products</h3>
+            </div>
+            <div class="combo d-flex justify-content-evenly flex-wrap">
+                <div class="card mx-2 my-5" style="width: 18rem;">
+                    <img class="card-img-top" src="images/Categories/Beverages1.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Cold Drink @&#8377; 23</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
+                            inventore!</p>
+                        <div class="price d-flex justify-content-between">
+                            <div class="veg">
+                                <img src="images/Categories/veg.svg" class="img-fluid" width=20 alt="">
+                                <span>@&#8377; <strong class="price">23</strong></span>
+                            </div>
+                            <button class="btn add-to-cart px-4">Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mx-2 my-5" style="width: 18rem;">
+                    <img class="card-img-top" src="images/Categories/Beverages2.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Drink Cola @&#8377; 100.</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
+                            inventore!</p>
+                        <div class="price d-flex justify-content-between">
+                            <div class="veg">
+                                <img src="images/Categories/veg.svg" class="img-fluid" width=20 alt="">
+                                <span class="price">@&#8377; <strong class="price">100</strong></span>
+                            </div>
+                            <button class="btn add-to-cart px-4">Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mx-2 my-5" style="width: 18rem;">
+                    <img class="card-img-top" src="images/Categories/Beverages3.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Mint Drink @&#8377; 50.</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
+                            inventore!</p>
+                        <div class="price d-flex justify-content-between">
+                            <div class="veg">
+                                <img src="images/Categories/veg.svg" class="img-fluid" width=20 alt="">
+                                <span class="price">@&#8377; <strong class="price">50</strong></span>
+                            </div>
+                            <button class="btn add-to-cart px-4">Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mx-2 my-5" style="width: 18rem;">
+                    <img class="card-img-top" src="images/Categories/Beverages4.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Beverages @&#8377; 93.</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
+                            inventore!</p>
+                        <div class="price d-flex justify-content-between">
+                            <div class="veg">
+                                <img src="images/Categories/veg.svg" class="img-fluid" width=20 alt="">
+                                <span class="price">@&#8377; <strong class="price">93</strong></span>
+                            </div>
+                            <button class="btn add-to-cart px-4">Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Desserts (upto 25% savings) -->
+            <div id="desert" class="category d-md-flex justify-content-between">
+                <h1 class="fw-bold">Desserts (upto 25% savings)</h1>
+                <h3 class="text-secondary fw-bold">4 Products</h3>
+            </div>
+            <div class="combo d-flex justify-content-evenly flex-wrap">
+                <div class="card mx-2 my-5" style="width: 18rem;">
+                    <img class="card-img-top" src="images/Categories/Desserts1.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Chocolate cake (upto 25% savings) @&#8377; 23</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
+                            inventore!</p>
+                        <div class="price d-flex justify-content-between">
+                            <div class="veg">
+                                <img src="images/Categories/veg.svg" class="img-fluid" width=20 alt="">
+                                <span>@&#8377; <strong class="price">23</strong></span>
+                            </div>
+                            <button class="btn add-to-cart px-4">Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mx-2 my-5" style="width: 18rem;">
+                    <img class="card-img-top" src="images/Categories/Desserts2.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Red velvet cake (upto 25% savings) @&#8377; 100.</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
+                            inventore!</p>
+                        <div class="price d-flex justify-content-between">
+                            <div class="veg">
+                                <img src="images/Categories/veg.svg" class="img-fluid" width=20 alt="">
+                                <span class="price">@&#8377; <strong class="price">100</strong></span>
+                            </div>
+                            <button class="btn add-to-cart px-4">Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mx-2 my-5" style="width: 18rem;">
+                    <img class="card-img-top" src="images/Categories/Desserts3.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Choco Desserts (upto 25% savings) @&#8377; 50.</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
+                            inventore!</p>
+                        <div class="price d-flex justify-content-between">
+                            <div class="veg">
+                                <img src="images/Categories/veg.svg" class="img-fluid" width=20 alt="">
+                                <span class="price">@&#8377; <strong class="price">50</strong></span>
+                            </div>
+                            <button class="btn add-to-cart px-4">Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mx-2 my-5" style="width: 18rem;">
+                    <img class="card-img-top" src="images/Categories/Desserts4.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Dark Chocolate cake (upto 25% savings) @&#8377; 93.</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
+                            inventore!</p>
+                        <div class="price d-flex justify-content-between">
+                            <div class="veg">
+                                <img src="images/Categories/veg.svg" class="img-fluid" width=20 alt="">
+                                <span class="price">@&#8377; <strong class="price">93</strong></span>
+                            </div>
+                            <button class="btn add-to-cart px-4">Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Pasta section  -->
+            <div id="pasta" class="category d-md-flex justify-content-between">
+                <h1 class="fw-bold">Pasta & Lasagne</h1>
+                <h3 class="text-secondary fw-bold">4 Products</h3>
+            </div>
+
+            <div class="combo d-flex justify-content-evenly flex-wrap">
+                <div class="card mx-2 my-5 rounded" style="width: 18rem;">
+                    <img class="card-img-top" src="images/Categories/pasta4.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Pasta @&#8377; 575.</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
+                            inventore!</p>
+                        <div class="price d-flex justify-content-between">
+                            <div class="nonVeg">
+                                <img src="images/Categories/non-veg.svg" class="img-fluid" width=20 alt="">
+                                <span>@&#8377; <strong class="price">575</strong></span>
+                            </div>
+                            <button class="btn add-to-cart px-4">Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mx-2 my-5" style="width: 18rem;">
+                    <img class="card-img-top" src="images/Categories/pasta3.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Red Pasta @&#8377; 535.</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
+                            inventore!</p>
+                        <div class="price d-flex justify-content-between">
+                            <div class="veg">
+                                <img src="images/Categories/veg.svg" class="img-fluid" width=20 alt="">
+                                <span class="price">@&#8377; <strong class="price">535</strong></span>
+                            </div>
+                            <button class="btn add-to-cart px-4">Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mx-2 my-5" style="width: 18rem;">
+                    <img class="card-img-top" src="images/Categories/pasta2.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Cheese Pasta @&#8377; 525.</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
+                            inventore!</p>
+                        <div class="price d-flex justify-content-between">
+                            <div class="veg">
+                                <img src="images/Categories/veg.svg" class="img-fluid" width=20 alt="">
+                                <span class="price">@&#8377; <strong class="price">525</strong></span>
+                            </div>
+                            <button class="btn add-to-cart px-4">Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mx-2 my-5" style="width: 18rem;">
+                    <img class="card-img-top" src="images/Categories/pasta1.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Pasta @&#8377; 100.</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
+                            inventore!</p>
+                        <div class="price d-flex justify-content-between">
+                            <div class="veg">
+                                <img src="images/Categories/veg.svg" class="img-fluid" width=20 alt="">
+                                <span class="price">@&#8377; <strong class="price">100</strong></span>
+                            </div>
+                            <button class="btn add-to-cart px-4">Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- cart section  -->
+        <div class="d-sm-none d-xsm-none d-md-block cart_right bg-light">
+            <div class="cart_empty py-5 text-center">
+                <h3>Cart Empty</h3>
+                <img src="images/Categories/empty-cart.png" class="img-fluid" width="400" alt="empty cart">
+                <p class="fw-bold text-center">Empty Cart</p>
+                <p>Let your Standout experience begin!</p>
+            </div>
+        </div>
+    </section>
+    <section class="safety pt-5 container text-center  my-5">
+        <h1>
+            Made with Next Level Hygiene. Delivered with Next Level Safety.
+        </h1>
+        <p>
+            Delivering Safe, Hygiene and Yummy Pizza, Always! All our pizzas are baked at 230 degree celsius.
+        </p>
+        <div class="video_section d-md-flex">
+            <div class="left">
+                <div class="temp d-flex">
+                    <div class="img">
+                        <img src="images/Categories/safetyMeasure.svg" alt="temprature">
+                    </div>
+                    <p>Real-time <strong>Temprature Tracking</strong> of Kitchen and Delivery Staff</p>
+                </div>
+                <div class="delivery d-flex mt-4">
+                    <div class="img">
+                        <img src="images/Categories/safetyMeasure1.svg" alt="contact less">
+                    </div>
+                    <p>Option to choose <strong>Contact-less Delivery</strong></p>
+                </div>
+            </div>
+            <div class="video">
+                <iframe class="rounded" width="560" height="315" src="https://www.youtube.com/embed/gwYtykmOMgc"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+    <footer class="footer mt-5">
+        <div class="safety_measures pt-5 py-2 container-fluid text-center">
+            <p class="my-2">
+                While we always followed a next level hygiene regime at Ovenstory, we have taken a few specific measures
+                at these times.
+            </p>
+            <div class="container cards my-5">
+                <div class="row g-4 d-flex flex-nowrap">
+                    <div class="col p-3">
+                        <img src="images/Categories/safetyMeasure2.svg" alt="">
+                        <p>Our kitchen executives have been instructed to wear masks at all the times.</p>
+                    </div>
+                    <div class="col p-3">
+                        <img src="images/Categories/safetyMeasure3.svg" alt="">
+                        <p>They have been trained about personal hygiene outside of work</p>
+                    </div>
+                    <div class="col p-3">
+                        <img src="images/Categories/safetyMeasure4.svg" alt="">
+                        <p>A daily log of our executives' body tempratures is being maintained.</p>
+                    </div>
+                    <div class="col p-3">
+                        <img src="images/Categories/safetyMeasure5.svg" alt="">
+                        <p>Every kitchen executive sanitizes his/her hands every hour.</p>
+                    </div>
+                    <div class="col p-3">
+                        <img src="images/Categories/safetyMeasure6.svg" alt="">
+                        <p>Every kitchen surface is regorously cleaned to ensure a clean and sanitized workstation.</p>
+                    </div>
+                    <div class="col p-3">
+                        <img src="images/Categories/safetyMeasure7.svg" alt="">
+                        <p>Our kitchen executives have been instructed to wear masks at all the times.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer text-left bg-light container-fluid d-md-flex mx-4">
+            <div class="online">
+                <ul class="list">
+                    <li class="list_item my-2 fs-5">Online</li>
+                    <li class="list_item">Order Pizza Online</li>
+                    <li class="list_item">Order Cheese Burst Pizza Online</li>
+                </ul>
+            </div>
+            <div class="legal mx-md-5">
+                <ul class="list">
+                    <li class="list_item my-2 fs-5">Legal</li>
+                    <li class="list_item">Privacy Policy</li>
+                    <li class="list_item">Terms and Conditions</li>
+                </ul>
+            </div>
+            <div class="contactUs mx-md-5">
+                <ul class="list">
+                    <li class="list_item my-2 fs-5">Contact us</li>
+                    <li class="list_item">Party Orders</li>
+
+                </ul>
+                <div class="followUs mt-5">
+                    <ul class="list">
+                        <li class="list_item my-2 fs-5">Follow us on</li>
+                    </ul>
+                    <div class="logo_social_media d-flex px-3">
+                        <div class="facebook mx-2">
+                            <img src="images/Categories/icon-facebook.svg" alt="">
+                        </div>
+                        <div class="twitter mx-3">
+                            <img src="images/Categories/icon-twitter.svg" alt="">
+                        </div>
+                        <div class="instagram">
+                            <img src="images/Categories/icon-instagram.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="container my-4">
+        <p class="text-center text-secondary">All rights reserved @Harsha Chauhan</p>
+    </footer>
+    <div class="mobile_nav d-flex d-md-none justify-content-evenly text-center fs-6">
+        <div class="home">
+            <i class="fas fa-home"></i>
+            <br>
+            Home
+        </div>
+        <div class="search">
+            <i class="fas fa-search"></i>
+            <br>
+            Search
+        </div>
+        <div class="cart">
+            <i class="fas fa-shopping-cart"></i>
+            <br>
+            Cart
+        </div>
+        <div id="account">
+            <i class="fas fa-user-circle"></i>
+            <br>
+            Account
+        </div>
+    </div>
+</body>
+
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<!-- Scipt JS -->
+<script src="js/script.js"></script>
+
+</html>
